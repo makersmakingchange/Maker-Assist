@@ -1,0 +1,19 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="overlay_switch"
+        android:padding="10dp"
+        android:summaryOff="OFF"
+        android:summaryOn="ON"
+        android:icon="@mipmap/ic_overlay"
+        android:title="@string/pref_title_overlay" />
+    <Preference android:title="@string/pref_title_help"
+        android:padding="10dp"
+        android:key="help"
+        android:summary=""
+        android:icon="@mipmap/ic_help">
+        <intent android:action=".Activity.HelpActivity" />
+    </Preference>
+
+</PreferenceScreen>

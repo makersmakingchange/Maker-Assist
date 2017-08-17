@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">Maker Assist</string>
+
+    <string name="icon">&#x20;</string>
+    <string name="icon_zoom_in">&#xe900;</string>
+    <string name="icon_ringtone">&#xe901;</string>
+    <string name="icon_power">&#xe902;</string>
+    <string name="icon_lock">&#xe903;</string>
+    <string name="icon_alarm">&#xe904;</string>
+    <string name="icon_settings">&#xe905;</string>
+    <string name="icon_home">&#xe906;</string>
+    <string name="icon_back">&#xe907;</string>
+    <string name="icon_display">&#xe908;</string>
+    <string name="icon_voice">&#xe909;</string>
+    <string name="icon_screenshot">&#xe90a;</string>
+    <string name="icon_unlock">&#xe90b;</string>
+    <string name="icon_zoom_out">&#xe90c;</string>
+    <string name="icon_swipe">&#xe90d;</string>
+    <string name="icon_macro">&#xe90e;</string>
+    <string name="icon_profile">&#xe90f;</string>
+    <string name="icon_close_eye">&#xe910;</string>
+    <string name="icon_open_eye">&#xe911;</string>
+    <string name="icon_add_profile">&#xe912;</string>
+    <string name="icon_add">&#xe913;</string>
+    <string name="icon_awake_off">&#xe914;</string>
+    <string name="icon_awake_on">&#xe915;</string>
+    <string name="icon_search">&#xe916;</string>
+    <string name="icon_notification">&#xe917;</string>
+    <string name="icon_volume">&#xe918;</string>
+    <string name="icon_scroll">&#xe919;</string>
+    <string name="icon_grab">&#xe91a;</string>
+    <string name="icon_Asset_29">&#xe91b;</string>
+    <string name="icon_zoomset">&#xe91c;</string>
+
+    <string name="icon_plus">&#xf055;</string>
+    <string name="icon_minus">&#xf056;</string>
+    <string name="icon_media">&#xf001;</string>
+    <string name="icon_clock">&#xf017;</string>
+    <string name="icon_ringtone2">&#xf2a0;</string>
+    <string name="icon_volumeup">&#xf028;</string>
+    <string name="icon_volumedown">&#xf027;</string>
+    <string name="icon_right">&#xf0da;</string>
+    <string name="icon_left">&#xf0d9;</string>
+    <string name="icon_up">&#xf0d8;</string>
+    <string name="icon_down">&#xf0d7;</string>
+    <string name="icon_close">&#xf00d;</string>
+
+    <!-- Strings related to Main Activity -->
+    <string name="main_instructions_title">LipSync Instructions</string>
+    <string name="main_instructions_title1">Puff</string>
+    <string name="main_instructions_text1">Tap / Select</string>
+    <string name="main_instructions_title2">Sip</string>
+    <string name="main_instructions_text2">Back Button</string>
+    <string name="main_instructions_title3">Long Puff (3 secs)</string>
+    <string name="main_instructions_text3">Drag and Drop Mode</string>
+    <string name="main_instructions_title4">Long Sip (3 secs)</string>
+    <string name="main_instructions_text4">Scrolling Mode</string>
+    <string name="main_begin_settings_button">Begin</string>
+
+    <!-- Strings related to Modes Description -->
+    <string name="mode_description_empty"></string>
+    <string name="zoom_overlay_text">Select zoom in or zoom out.</string>
+    <string name="mode_description_volume">Change the volumes using slider or buttons.</string>
+    <string name="mode_description_admin">Please enable Maker Assist as an admin app under device Administrators.</string>
+    <string name="mode_description_service">Please enable Maker Assist under Accessibility services.</string>
+    <string name="mode_description_zoom">Select zoom in or zoom out.</string>
+    <string name="mode_description_swipe">Short-Puff to select an area to swipe.</string>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- General settings -->
+    <string name="pref_title_overlay">Overlay</string>
+    <string name="pref_title_help">Help</string>
+
+    <!-- Intro -->
+    <string name="intro_button_previous">Previous</string>
+    <string name="intro_button_next">Next</string>
+    <string name="intro_button_close">Close</string>
+
+    <string name="intro_text_title1">This is the Menu Button</string>
+    <string name="intro_text_description1">Puffing on the Main Menu icon opens a small menu that can hold up to 4 different features per page.\n\n\n\n</string>
+    <string name="intro_text_next_1">Next</string>
+
+    <string name="intro_text_title2">This is the Main Menu</string>
+    <string name="intro_text_description2">Puffing on each Main Menu feature performs the specific feature.\n\nThe Device Administrator and Accessibility Service has to be enabled before using the Main Menu.</string>
+    <string name="intro_text_next_2">Next</string>
+
+    <string name="intro_text_title3">Enabling Accessibility service</string>
+    <string name="intro_text_description3">Maker Assist Accessibility service can be enabled under Settings>Accessibility.\n\nYou will need to click on Maker Assist Service under Accessibility Services and click on OK.</string>
+    <string name="intro_text_next_3">Next</string>
+
+    <string name="intro_text_title4">Enabling Device Admin</string>
+    <string name="intro_text_description4">Maker Assist can be enabled as a Device administration application under Settings>Security.\n\nYou will need to click on Maker Assist under Device administrators and click on Active.</string>
+    <string name="intro_text_next_4">Done</string>
+
+    <string name="help_text_title1">How to enable Maker Assist menu?</string>
+    <string name="help_text_description1">To enable the menu, please turn ON the OVERLAY under Settings in Maker Assist application.</string>
+
+    <string name="help_text_title2">How to disable Maker Assist menu?</string>
+    <string name="help_text_description2">To disable the menu, please turn OFF the OVERLAY under Settings of Maker Assist application and then disable Maker Assist service under accessibility settings of your device.</string>
+
+    <string name="help_text_title3">What are the features of Maker Assist app?</string>
+    <string name="help_text_description3">The main features include :\n\nBack\nHome\nRecent\nNotification\nStay On\nVolume\nLock phone\nSettings\nPower (Android 5+)\nZoom (Android 7+)\nSwipe (Android 7+)\n\n</string>
+
+    <string name="accessibility_service_description">Maker Assist accessibility service allows users to access key features using Maker Assist menu overlay.</string>
+
+    <!-- Actionbar titles  -->
+    <string name="actionbar_title_settings">Settings</string>
+    <string name="actionbar_title_help">Help</string>
+
+</resources>

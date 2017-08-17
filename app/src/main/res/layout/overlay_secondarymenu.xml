@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overlay_secondarymenu"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_rounded_flat"
+    android:weightSum="1">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:paddingTop="30dp"
+        android:layout_height="140dp">
+        <GridView
+            android:id="@+id/grid_view_secondarymenu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:columnWidth="80dp"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="0dp"
+            android:stretchMode="spacingWidthUniform"
+            />
+    </RelativeLayout>
+</LinearLayout>
