@@ -167,6 +167,7 @@ public class MakerAssistService  extends AccessibilityService {
                 OVERLAY="introMenu";
                 windowManager.addView(introLayout, introParams);
                 editor.putBoolean("is_intro_displayed", true);
+                editor.clear();
                 editor.commit();
             } else {
                 //Show QuickButton if the user have gone over introduction
@@ -192,7 +193,8 @@ public class MakerAssistService  extends AccessibilityService {
         WindowManager.LayoutParams newLayoutParams = new WindowManager.LayoutParams(
                 WindowManager.LayoutParams.WRAP_CONTENT,
                 WindowManager.LayoutParams.WRAP_CONTENT,
-                WindowManager.LayoutParams.TYPE_SYSTEM_ERROR,
+                (currentApiVersion >= Build.VERSION_CODES.O) ? WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY : WindowManager.LayoutParams.TYPE_SYSTEM_ERROR,
+                //WindowManager.LayoutParams.TYPE_SYSTEM_ERROR,
                 WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL|WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH|WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE| WindowManager.LayoutParams.FLAG_DIM_BEHIND,
                 PixelFormat.TRANSLUCENT);
         //Define default location of LinearLayout on screen using LayoutParams
@@ -1549,6 +1551,7 @@ public class MakerAssistService  extends AccessibilityService {
         SharedPreferences prefs = getSharedPreferences("MAKER_ASSIST", 0);
         SharedPreferences.Editor editor = prefs.edit();
         editor.putBoolean("is_overlay_on", false);
+        editor.clear();
         editor.commit();
         //Log.d("MAKER_ASSIST is: ","destroyed");
     }
@@ -1586,8 +1589,9 @@ public class MakerAssistService  extends AccessibilityService {
             isServiceEnabled = true;
             //Update status of is_intro_displayed and is_overlay_on SharedPreference
             editor.putBoolean("is_service_on", true);
-            editor.putBoolean("is_intro_displayed", false);
+            editor.putBoolean("is_intro_displayed", true);
             editor.putBoolean("is_overlay_on", true);
+            editor.clear();
             editor.commit();
             //Log.d("MAKER_ASSIST is: ","connected ");
         }

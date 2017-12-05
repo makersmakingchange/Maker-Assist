@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:paddingBottom="5dp"
     tools:context="com.makersmakingchange.maker_assist.Activity.MainActivity">
     <LinearLayout
         android:layout_width="match_parent"
@@ -138,8 +139,8 @@
             android:maxHeight="30dp"
             android:paddingLeft="40dp"
             android:paddingRight="40dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_gravity="center"
             android:contentDescription="@string/main_begin_settings_button"
             android:background="@drawable/rectangle_rounded_green"

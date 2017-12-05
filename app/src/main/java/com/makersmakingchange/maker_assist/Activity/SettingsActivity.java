@@ -92,12 +92,21 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
                             startService(new Intent(getApplication(), MakerAssistService.class));
                             editor.putBoolean("is_intro_displayed", false);
                             editor.putBoolean("is_overlay_on", true);
+                            editor.clear();
                             editor.commit();
                         }
                         else{
                             stopService(new Intent(getApplication(), MakerAssistService.class));
                             editor.putBoolean("is_overlay_on", false);
+                            editor.clear();
                             editor.commit();
+
+                            //Open AccessibilitySettings
+                            Intent serviceIntent = new Intent();
+                            serviceIntent.setAction(Settings.ACTION_ACCESSIBILITY_SETTINGS);
+                            serviceIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            startActivity(serviceIntent);
+
                         }
                         return true;
                     }
